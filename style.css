@@ -1,0 +1,144 @@
+:root{
+    --bodyColor:linear-gradient(to right, rgb(211, 88, 108), rgb(2, 2, 90));
+    --fontColor:black;
+    --containerColor:rgb(0, 0, 0, 0.75);
+    --spanColor: rgb(2, 2, 90);
+    --hoverColor: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: var(--bodyColor);
+    color: var(--hoverColor);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+} 
+
+.container{
+    background-color: var(--containerColor);
+    width: 90%;
+    aspect-ratio: 1/1.1;
+    margin: 2em auto;
+    padding: .5em;
+}
+
+img{
+    width: 17em;
+    height: 18em;
+}
+
+h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 1em 2em;
+    color:rgb(211, 88, 108);
+}
+
+h1 > span{
+    color: var(--spanColor)
+}
+
+li{
+    list-style: none;
+    /*background-image: linear-gradient(to right, rgb(211, 88, 108), rgb(2, 2, 90));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+li:hover,
+.active{
+    background-color: var(--spanColor);
+   color: var(--hoverColor);
+   width: max-content;
+   border-radius: .3em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7em;
+}
+
+main{
+    display:flex;
+    width: 100%;
+    padding: 2.5em;
+    gap: 2em;
+}
+
+main .title{
+    color: var(--spanColor);
+}
+
+.mainText{
+    width: 65%;
+    padding: 1em;
+}
+
+.mainImg{
+    width: 35%;
+    padding: 1em;
+}
+
+.mainImg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+h4{
+    font-size: 1.5em;
+    padding-bottom: .8em;
+}
+
+p{
+    font-size: 1em;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+/*button{
+    width: 9em;
+    height: 3em;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+.bx{
+    font-size: 2em;
+}
+
+.container{
+    background-color: red;
+    width: 500px;
+    aspect-ratio: 1/1.1;
+    margin: 2em auto;
+}
+
+.list{
+    border: 1px solid white;
+    margin-bottom: 4em;
+}
+
+.list label{
+    cursor: pointer;
+}
